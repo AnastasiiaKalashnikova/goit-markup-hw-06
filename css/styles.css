@@ -42,6 +42,10 @@ button {
     cursor: pointer;
 }
 
+textarea {
+    resize: none;
+}
+
 /* ЗАГАЛЬНІ */
 
 .list {
@@ -527,7 +531,8 @@ margin-top: 8px;
 
 
 /* КНОПКИ */
-.hero-button {
+.hero-button,
+.modal-send-button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-size: 16px;
@@ -557,7 +562,6 @@ margin-top: 8px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -604,7 +608,7 @@ margin-top: 8px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 408px;
     height: 576px;
     padding: 72px 24px 24px 24px;
@@ -630,9 +634,11 @@ margin-top: 8px;
     height: 24px;
 }
 
-.modal-close-btn-icon {
-
-
+.form-text-action {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: center;
 }
 
 
@@ -647,4 +653,19 @@ margin-top: 8px;
 
 .form-item:not(:first-child) {
     margin-top: 8px;
+}
+
+.form-item label {
+    margin-bottom: 4px;
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.modal-send-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
 }
