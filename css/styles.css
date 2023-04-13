@@ -427,11 +427,11 @@ margin-top: 8px;
 
 .footer>.container {
     display: flex;
-    justify-content: space-between;
 }
 
 .footer-content {
     width: 264px;
+    margin-right: 120px;
 }
 
 .slogan {
@@ -442,6 +442,7 @@ margin-top: 8px;
 
 .footer-social {
     width: 208px;
+    margin-right: 80px;
 }
 
 .text-footer {
@@ -470,7 +471,7 @@ margin-top: 8px;
     
 }
 
-.subscribe-form>label {
+.subscribe-form>p {
     margin-bottom: 16px;
 }
 
@@ -483,11 +484,13 @@ margin-top: 8px;
 .subscribe-wrap>input {
     margin-right: 24px;
     padding: 8px 16px;
+    width: 264px;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--dark);
     color: var(--basik-white);
+    transition: border-color 250ms var(--cubic);
 }
 
 .subscribe-wrap>input::placeholder {
@@ -609,7 +612,6 @@ margin-top: 8px;
     letter-spacing: 0.04em;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;
     font-family: Roboto, sans-serif;
     color: var(--basik-white);
     background: var(--primary-brand);
@@ -705,6 +707,12 @@ margin-top: 8px;
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    transition: background-color 250ms var(--cubic);
+}
+
+.modal-close-btn-icon {
+    fill: var(--dark);
+    transition: fill 250ms var(--cubic);
 }
 
 .modal-close-btn:hover,
@@ -723,6 +731,7 @@ margin-top: 8px;
     letter-spacing: 0.02em;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 
@@ -766,6 +775,7 @@ margin-top: 8px;
 
 .form-input {
     position: relative;
+    margin-top: 4px;
 }
 
 .form-item-icon {
@@ -852,5 +862,6 @@ margin-top: 8px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 24px;
+    width: 169px;
 }
 
