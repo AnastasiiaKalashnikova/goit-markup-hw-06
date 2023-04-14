@@ -840,21 +840,18 @@ margin-top: 8px;
     transition: background-color 250ms var(--cubic);
 }
 
-.privat-policy-checked {
-
-}
 
 .privat-policy-checked:checked + .policy-point::before {
     background-color: var(--pressed-state);
-    background-image: url(/images/checked.svg);
+    background-image: url(/images/checkbox.svg);
     background-size: contain;
     border: none;
     border-radius: 2px;
 
 }
 
-.privat-policy-checked:focus+.policy-point::before {
-    border-color: var(--pressed-state);
+.privat-policy-checked:focus + .policy-point::before {
+    border: 1px solid var(--pressed-state);
 }
 
 .modal-send-button {
