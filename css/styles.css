@@ -440,10 +440,6 @@ margin-top: 8px;
     line-height: 1.5;
 }
 
-.footer-social {
-    width: 208px;
-    margin-right: 80px;
-}
 
 .text-footer {
         color: var(--basik-white);
@@ -466,8 +462,7 @@ margin-top: 8px;
 }
 
 .subscribe-form {
-    display: flex;
-    flex-direction: column;
+    margin-left: auto;
     
 }
 
@@ -843,7 +838,7 @@ margin-top: 8px;
 
 .privat-policy-checked:checked + .policy-point::before {
     background-color: var(--pressed-state);
-    background-image: url(/images/checkbox.svg);
+    background-image: url(../images/checkbox.svg);
     background-size: contain;
     border: none;
     border-radius: 2px;
