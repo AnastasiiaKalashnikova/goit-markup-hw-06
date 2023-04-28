@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles-adaptiv.css">
 </head>
 
 <body>
     <!--Шапка-->
+    
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
         <nav class="menu">
             <a class="logo link" href="./index.html">Web<span class="logo-dark">Studio</span></a>
             <ul class="menu-list list">
@@ -31,9 +32,75 @@
                 <li class="item"><a class="contact-item link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+        <button type="button" class="mobile-menu-open js-open-menu" >
+            <svg class="mobile-menu-open-icon" width="32px" height="22px">
+                <use href="/images/icons.svg#menu-hamburger"></use>
+            </svg>
+        </button>
+        </div>
+
+        <div class="mobile-menu js-menu-container is-hidden" >
+                <div>
+            <button class="mobile-menu-close-btn js-close-menu"  type="button">
+                <svg class="mobile-menu-close-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#close-modal"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item"><a class="mobile-menu-link current">Studio</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link">Portfolio</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link">Contacts</a></li>
+            </ul>
+            </div>
+
+            <div>
+            <address class="mobile-contact">
+                <ul class="mobile-contact-list">
+                    <li><a class="mobile-tel" href="">+11 (000) 111-11-11</a></li>
+                    <li><a class="mobile-mail" href="">info@devstudio.com</a></li>
+                </ul>
+            </address>
+    
+            
+<!-- ІКОНКИ З КАРТКИ ТИМ МЕМБКРА -->
+
+            <ul class="mobile-menu-social-list">
+                <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                        <svg class="social-list-icon" width="16px" height="16px">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                        <svg class="social-list-icon" width="16px" height="16px">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                        <svg class="social-list-icon" width="16px" height="16px">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                        <svg class="social-list-icon" width="16px" height="16px">
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            </div>
+
         </div>
     </header>
+
     <!--Основна частина-->
+  
     <main>
         <section class="hero">
             <div class="container">
@@ -41,11 +108,11 @@
             <button class="hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
-
+    
         <section class="advantages">
             <div class="container">
             <h2 class="advantages-title visually-hidden">Advantages</h2>
-            <ul class="advantades-list list">
+            <ul class="advantades-list">
                 <li class="advantages-item">
                     <div class="advantages-icon">
                         <svg class="advantages-icon-img">
@@ -53,7 +120,7 @@
                         </svg>
                     </div>
                     <h3 class="advantages-subtitle subtitle">Strategy</h3>
-                    <p class="description">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                    <p class="advantages-description">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                 </li>
                 <li class="advantages-item">
                     <div class="advantages-icon">
@@ -62,7 +129,7 @@
                         </svg>
                     </div>
                     <h3 class="advantages-subtitle subtitle">Punctuality</h3>
-                    <p class="description">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    <p class="advantages-description">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                 </li>
                 <li class="advantages-item">
                     <div class="advantages-icon">
@@ -71,7 +138,7 @@
                         </svg>
                     </div>
                     <h3 class="advantages-subtitle subtitle">Diligence</h3>
-                    <p class="description">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                    <p class="advantages-description">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                 </li>
                 <li class="advantages-item">
                     <div class="advantages-icon">
@@ -80,12 +147,13 @@
                         </svg>
                     </div>
                     <h3 class="advantages-subtitle subtitle">Technologies</h3>
-                    <p class="description">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    <p class="advantages-description">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
             </ul>
             </div>
         </section>
 
+       
         <section class="servis">
             <div class="container">
             <h2 class="servis-title">What are we doing</h2>
@@ -105,7 +173,7 @@
                     <img class="img" src="./images/team/mark-guerrero.jpg" alt="Mark Guerrero's photo" width="264">
                     <div class="team-wrap">
                         <h3 class="team-subtitle subtitle">Mark Guerrero</h3>
-                        <p class="description">Product Designer</p>
+                        <p class="team-description">Product Designer</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
                                 <a href="" class="social-list-link">
@@ -142,7 +210,7 @@
                     <img class="img" src="./images/team/tom-ford.jpg" alt="Tom Ford's photo" width="264">
                     <div class="team-wrap">
                         <h3 class="team-subtitle subtitle">Tom Ford</h3>
-                        <p class="description">Frontend Developer</p>
+                        <p class="team-description">Frontend Developer</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
                                 <a href="" class="social-list-link">
@@ -179,7 +247,7 @@
                     <img class="img" src="./images/team/camila-garcia.jpg" alt="Camila Garcia's photo" width="264"> 
                     <div class="team-wrap">
                         <h3 class="team-subtitle subtitle">Camila Garcia</h3>
-                        <p class="description">Marketing</p>
+                        <p class="team-description">Marketing</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
                                 <a href="" class="social-list-link">
@@ -216,7 +284,7 @@
                     <img class="img" src="./images/team/daniel-wilson.jpg" alt="Daniel Wilson's photo" width="264">
                     <div class="team-wrap">
                         <h3 class="team-subtitle subtitle">Daniel Wilson</h3>
-                        <p class="description">UI Designer</p>
+                        <p class="team-description">UI Designer</p>
                         <ul class="social-list list">
                             <li class="social-list-item">
                                 <a href="" class="social-list-link">
@@ -305,6 +373,7 @@
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-wrap-tablet">
             <div class="footer-content">
                 <a class="logo link" href="./index.html">Web<span class="logo-white">Studio</span></a>
              <p class="slogan">
@@ -345,6 +414,7 @@
                     </li>
                 </ul>
             </div>
+            </div>
 
             <form class="subscribe-form">
                 <p class="text-footer">Subscribe</p>
@@ -360,7 +430,7 @@
 
         </div>
     </footer>
-
+    
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -373,7 +443,7 @@
                 Leave your contacts and we will call you back
             </p>
 
-            <form action="">
+            <form>
                 <div class="form-item">
                     <label class="modal-text">Name
                         <div class="form-input">
@@ -467,5 +537,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
